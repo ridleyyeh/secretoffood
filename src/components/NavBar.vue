@@ -27,5 +27,6 @@ import { routerlink} from 'vue-router'
 const links = ref([
     { text: 'Home', to: '/' },
     { text: 'Add Receipe', to: '/add' },
+])
 
 </script>
