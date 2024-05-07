@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import NavBar from '@/components/NavBar.vue'
 import RecipeCard from '@/components/RecipeCard.vue'
 import SearchBar from '@/components/SearchBar.vue'
+import ShoppingList from '@/components/ShoppingList.vue'
 
 const recipes = ref([
   { id: 1, title: "泰式酸辣麵", description: '簡單快速家常菜', Image: '@/assets/noodles.jpg' },
@@ -17,6 +18,7 @@ const recipes = ref([
   <header>
     <NavBar />
     <SearchBar />
+    <ShoppingList />
 
   </header>
 
