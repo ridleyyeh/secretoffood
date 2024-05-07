@@ -5,8 +5,6 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item" v-for="link in links" :key="link.text">
@@ -15,18 +13,22 @@
             </ul>
         </div>
     </nav>
-
-
 </template>
 
-
 <script setup>
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
-
-const links = ref([
-    { text: 'Home', to: '/' },
-    { text: 'Add Receipe', to: '/add' },
-])
-
+const links = [
+    { text: '首頁', to: '/' },
+    { text: '尋找食譜', to: '/' },
+    { text: '添加食譜', to: '/' },
+    { text: '購物', to: '/' },
+];
 </script>
+
+<style scoped lang="scss">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+</style>
