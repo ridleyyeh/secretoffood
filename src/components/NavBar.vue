@@ -22,7 +22,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { router-link} from 'vue-router'
+import { routerlink} from 'vue-router'
 
 const links = ref([
     { text: 'Home', to: '/' },
