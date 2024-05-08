@@ -19,7 +19,7 @@
 const links = [
     { text: '首頁', to: '/' },
     { text: '尋找食譜', to: '/RecipeDetail' },
-    { text: '添加食譜', to: '/' },
+    { text: '添加食譜', to: '/RecipeEdit' },
     { text: '購物', to: '/' },
 ];
 </script>

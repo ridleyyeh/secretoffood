@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
+
 const recipe = ref([
     {
         title: '',
         description: '',
+        ingredients: [],
     }
 ]
 
@@ -19,25 +21,30 @@ const submitForm = () => {
 <template>
     <form @submit.prevent="submitForm">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
-            <input v-model="recipe.title" type="text" class="form-control" aria-label="Sizing example input"
+            <span class="input-group-text" id="inputGroup-sizing-default">餐點名稱</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default">
         </div>
 
         <div class="form-floating">
-            <textarea v-model="recipe.description" class="form-control" placeholder="description" id="floatingTextarea"
-                required></textarea>
-            <label for="floatingTextarea">Comments</label>
+            <textarea class="form-control" placeholder="description" id="floatingTextarea" required></textarea>
+            <label for="floatingTextarea">簡短描述</label>
         </div>
-        <!-- more  -->
-        <button type="submit" class="btn btn-outline-primary">Submit</button>
+
+        <div class="form-floating mt-3">
+            <textarea class="form-control" placeholder="description" id="floatingTextarea" required></textarea>
+            <label for="floatingTextarea">食材描述</label>
+        </div>
+
+        <input class="btn btn-primary mt-3" type="submit" value="Submit">
+
     </form>
 </template>
 
 <style scoped lang="scss">
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 </style>
