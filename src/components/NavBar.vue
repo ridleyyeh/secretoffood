@@ -18,7 +18,7 @@
 <script setup>
 const links = [
     { text: '首頁', to: '/' },
-    { text: '尋找食譜', to: '/' },
+    { text: '尋找食譜', to: '/RecipeDetail' },
     { text: '添加食譜', to: '/' },
     { text: '購物', to: '/' },
 ];
@@ -36,9 +36,13 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 999;
+    border: 2px solid black;
 
     .navbar-brand {
         font-weight: 900
@@ -47,7 +51,9 @@ nav {
     div {
 
         .navbar-nav {
-            gap: 15px;
+            gap: 20px;
+
+
 
             .nav-item {
 
