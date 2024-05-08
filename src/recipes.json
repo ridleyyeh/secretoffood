@@ -1,122 +1,142 @@
 [
   {
     "id": 1,
-    "title": "四川蝦",
-    "description": "麻辣鮮香，使用四川辣椒和花椒快炒而成。",
-    "image": "/path/to/image1.jpg"
+    "title": "番茄炒蛋",
+    "description": "簡單快速的家常菜，營養豐富。",
+    "image": "tomato-eggs.jpg",
+    "ingredients": ["2個番茄", "3個雞蛋", "適量食鹽", "少許蔥花"]
   },
   {
     "id": 2,
-    "title": "雞肉帕瑪森",
-    "description": "酥脆的雞胸肉，頂部覆蓋著馬力納醬和融化的莫札瑞拉起司。",
-    "image": "/path/to/image2.jpg"
+    "title": "清蒸鱸魚",
+    "description": "鮮美滋補的健康選擇，操作簡單。",
+    "image": "steamed-bass.jpg",
+    "ingredients": ["1條鱸魚", "適量薑片", "適量蔥段", "少許料酒"]
   },
   {
     "id": 3,
-    "title": "義大利面",
-    "description": "經典的意大利麵，配上自製的番茄醬和新鮮羅勒。",
-    "image": "/path/to/image3.jpg"
+    "title": "宮保雞丁",
+    "description": "經典川菜，麻辣鮮香。",
+    "image": "kung-pao-chicken.jpg",
+    "ingredients": ["300g雞胸肉", "適量花生", "適量乾辣椒", "適量蔥花", "適量薑末"]
   },
   {
     "id": 4,
-    "title": "泰式綠咖喱雞",
-    "description": "使用泰國本地香料和新鮮椰奶製成的綠咖喱。",
-    "image": "/path/to/image4.jpg"
+    "title": "麻婆豆腐",
+    "description": "麻辣味濃，鮮香適口。",
+    "image": "mapo-tofu.jpg",
+    "ingredients": ["1盒豆腐", "100g牛肉末", "適量豆瓣醬", "適量蔥花"]
   },
   {
     "id": 5,
-    "title": "蒜香烤肉串",
-    "description": "香蒜與迷迭香的完美組合，使得烤肉串風味獨特。",
-    "image": "/path/to/image5.jpg"
+    "title": "紅燒肉",
+    "description": "肥而不膩，入口即化。",
+    "image": "braised-pork.jpg",
+    "ingredients": ["500g五花肉", "適量老抽", "適量生薑", "適量糖"]
   },
   {
     "id": 6,
-    "title": "韓式炸雞",
-    "description": "外酥內嫩，配上特製的甜辣醬，風味絕佳。",
-    "image": "/path/to/image6.jpg"
+    "title": "糖醋里脊",
+    "description": "外酥裡嫩，甜中帶酸。",
+    "image": "sweet-sour-pork.jpg",
+    "ingredients": ["300g里脊肉", "適量雞蛋", "適量麵粉", "適量番茄醬"]
   },
   {
     "id": 7,
-    "title": "牛肉燴飯",
-    "description": "慢燉牛肉與香料，搭配米飯食用最對味。",
-    "image": "/path/to/image7.jpg"
+    "title": "土豆燒牛肉",
+    "description": "土豆軟爛，牛肉鮮美。",
+    "image": "potato-beef.jpg",
+    "ingredients": ["200g牛肉", "2個土豆", "適量胡蘿蔔", "適量洋蔥"]
   },
   {
     "id": 8,
-    "title": "墨西哥玉米片",
-    "description": "配上酸奶油、芝士和莎莎醬的經典玉米片。",
-    "image": "/path/to/image8.jpg"
+    "title": "蛋撻",
+    "description": "口感細膩，甜而不膩。",
+    "image": "egg-tart.jpg",
+    "ingredients": ["適量撻皮", "適量雞蛋", "適量牛奶", "適量糖"]
   },
   {
     "id": 9,
-    "title": "印度咖喱雞",
-    "description": "充滿異國風味的印度咖喱，配以雞肉和香米。",
-    "image": "/path/to/image9.jpg"
+    "title": "果汁",
+    "description": "自然鮮甜，清涼解渴。",
+    "image": "fruit-juice.jpg",
+    "ingredients": ["適量蘋果", "適量胡蘿蔔", "適量橙子"]
   },
   {
     "id": 10,
-    "title": "日式拉麵",
-    "description": "濃郁的雞骨湯底，配上叉燒、蛋和竹筍。",
-    "image": "/path/to/image10.jpg"
+    "title": "烤雞",
+    "description": "外皮酥脆，肉質鮮嫩。",
+    "image": "roast-chicken.jpg",
+    "ingredients": ["1隻整雞", "適量鹽", "適量黑胡椒", "適量迷迭香"]
   },
   {
     "id": 11,
-    "title": "法式洋蔥湯",
-    "description": "濃郁的洋蔥風味，頂層撒上烤麵包和熔化的起司。",
-    "image": "/path/to/image11.jpg"
+    "title": "牛肉麵",
+    "description": "湯頭濃郁，牛肉軟嫩。",
+    "image": "beef-noodle.jpg",
+    "ingredients": ["300g牛肉", "2束麵條", "適量青菜", "適量蔥", "適量薑片"]
   },
   {
     "id": 12,
-    "title": "希臘沙拉",
-    "description": "新鮮的番茄、黃瓜、洋蔥、橄欖和羊奶酪。",
-    "image": "/path/to/image12.jpg"
+    "title": "炒飯",
+    "description": "簡單快捷的全家福。",
+    "image": "fried-rice.jpg",
+    "ingredients": ["2碗隔夜米飯", "50g火腿", "適量青豆", "2顆雞蛋", "適量蔥花"]
   },
   {
     "id": 13,
-    "title": "蘭姆牛排",
-    "description": "佐以香草和蒜蓉，蘭姆牛排的豐富風味令人難忘。",
-    "image": "/path/to/image13.jpg"
+    "title": "蒸蛋",
+    "description": "口感嫩滑的經典小菜。",
+    "image": "steamed-egg.jpg",
+    "ingredients": ["3顆雞蛋", "150ml高湯", "適量鹽", "少許蔥花"]
   },
   {
     "id": 14,
-    "title": "波士頓龍蝦",
-    "description": "經典美式海鮮，烹調至完美的甜美。",
-    "image": "/path/to/image14.jpg"
+    "title": "炸醬麵",
+    "description": "醬香濃郁，喜愛的經典面食。",
+    "image": "zhajiang-noodle.jpg",
+    "ingredients": ["2束麵條", "100g豬肉末", "適量黃瓜絲", "適量豆瓣醬"]
   },
   {
     "id": 15,
-    "title": "西班牙海鮮燴飯",
-    "description": "海鮮與番紅花米飯的完美結合，西班牙的傳統美食。",
-    "image": "/path/to/image15.jpg"
+    "title": "三明治",
+    "description": "快速簡單的早餐選擇。",
+    "image": "sandwich.jpg",
+    "ingredients": ["2片吐司", "1片火腿", "1片起司", "適量生菜", "適量番茄"]
   },
   {
     "id": 16,
-    "title": "蒙古烤肉",
-    "description": "融合了多種香料和醬料的烤肉，風味獨特。",
-    "image": "/path/to/image16.jpg"
+    "title": "番茄湯",
+    "description": "酸甜開胃，營養豐富。",
+    "image": "tomato-soup.jpg",
+    "ingredients": ["4個番茄", "1顆洋蔥", "適量雞湯", "少許鹽", "少許黑胡椒粉"]
   },
   {
     "id": 17,
-    "title": "越南春卷",
-    "description": "清爽的蔬菜和蝦仁，搭配特製的蘸醬。",
-    "image": "/path/to/image17.jpg"
+    "title": "披薩",
+    "description": "金黃酥脆的底，豐富的配料。",
+    "image": "pizza.jpg",
+    "ingredients": ["1個披薩餅底", "適量披薩醬", "適量香腸片", "適量青椒", "適量洋蔥", "適量起司"]
   },
   {
     "id": 18,
-    "title": "比薩餅",
-    "description": "薄餅底搭配您喜愛的頂料，自由組合。",
-    "image": "/path/to/image18.jpg"
+    "title": "薯條",
+    "description": "外酥內軟，風味絕佳。",
+    "image": "french-fries.jpg",
+    "ingredients": ["2個大馬鈴薯", "適量食鹽", "適量植物油"]
   },
   {
     "id": 19,
-    "title": "英式下午茶",
-    "description": "傳統的英式下午茶，包括茶、三明治、烤餅和糕點。",
-    "image": "/path/to/image19.jpg"
+    "title": "蔬菜沙拉",
+    "description": "清新爽口，健康輕食。",
+    "image": "salad.jpg",
+    "ingredients": ["適量生菜", "適量小番茄", "適量黃瓜", "適量胡蘿蔔", "適量沙拉醬"]
   },
   {
     "id": 20,
-    "title": "韓式泡菜",
-    "description": "自家製的辣泡菜，風味獨特且健康。",
-    "image": "/path/to/image20.jpg"
+    "title": "壽司",
+    "description": "精緻美味的日式料理。",
+    "image": "sushi.jpg",
+    "ingredients": ["適量壽司米", "適量海苔", "適量生魚片", "適量酥脆黃瓜", "適量酥脆蘿蔔"]
   }
 ]

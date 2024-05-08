@@ -62,6 +62,7 @@ const recipes = reactive(recipesData);
         width: 100%;
         height: auto;
         border-radius: 25px;
+        object-fit: cover;
     }
 
 }

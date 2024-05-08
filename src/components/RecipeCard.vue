@@ -1,6 +1,6 @@
 <template>
     <div class="card-body">
-        <div class="card" @click="goToRecipe" style="width: 18rem;">
+        <div class="card" @click="emitOpenModal" style="width: 18rem;">
             <img :src="recipe.jpg" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{ recipe.title }}</h5>
@@ -13,6 +13,7 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
+import { defineProps, defineEmits } from 'vue';
 
 const props = defineProps({
     recipe: {
@@ -22,12 +23,16 @@ const props = defineProps({
 
 })
 
+const emit = defineEmits(['openModal']);
+
+function emitOpenModal() {
+    emit('openModal', props.recipe);
+}
+
 
 const router = useRouter();
 
-function goToRecipe() {
-    router.push(`/recipe/${props.recipe.id}`);
-}
+
 </script>
 
 <style scoped lang="scss">
