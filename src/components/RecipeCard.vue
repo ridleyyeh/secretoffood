@@ -1,46 +1,34 @@
+<script setup>
+import { useRecipeStore } from '@/stores/recipeStore';
+import { defineProps } from 'vue';
+
+const props = defineProps({
+    recipe: Object
+});
+
+const store = useRecipeStore();
+
+function openModal() {
+    store.selectRecipe(props.recipe);
+}
+</script>
+
 <template>
     <div class="card-body">
-        <div class="card" @click="emitOpenModal" style="width: 18rem;">
-            <img :src="recipe.jpg" class="card-img-top">
+        <div class="card" @click="openModal" style="width: 18rem;">
+            <img :src="recipe.image" alt="Recipe image" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{ recipe.title }}</h5>
                 <p class="card-text">{{ recipe.description }}</p>
             </div>
         </div>
     </div>
-
 </template>
-
-<script setup>
-import { useRouter } from 'vue-router';
-import { defineProps, defineEmits } from 'vue';
-
-const props = defineProps({
-    recipe: {
-        type: Object,
-        required: true,
-    }
-
-})
-
-const emit = defineEmits(['openModal']);
-
-function emitOpenModal() {
-    emit('openModal', props.recipe);
-}
-
-
-const router = useRouter();
-
-
-</script>
 
 <style scoped lang="scss">
 .card-body {
-
-
     .card {
-        flex: 0 0 calc((100% - 3 * 20px) / 4); // 减去间隙后分四份
+        flex: 0 0 calc((100% - 3 * 20px) / 4);
         margin: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         border: 1px solid #ccc;
@@ -48,10 +36,7 @@ const router = useRouter();
 
         &:hover {
             transform: scale(1.05);
-
         }
-
-
     }
 }
 </style>

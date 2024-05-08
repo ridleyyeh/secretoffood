@@ -1,22 +1,21 @@
-// src/stores/recipeStore.js
 import { defineStore } from 'pinia'
 
 export const useRecipeStore = defineStore('recipeStore', {
   state: () => ({
     recipes: [],
     selectedRecipe: null,
-    showModal: false
+    showModal: false // 初始默認不跳窗
   }),
   actions: {
-    addRecipe(recipe) {
-      this.recipes.push(recipe)
+    setRecipes(recipes) {
+      this.recipes = recipes
     },
     selectRecipe(recipe) {
       this.selectedRecipe = recipe
-      this.showModal = true
+      this.showModal = true // 點選食譜顯示跳窗窗口
     },
     closeRecipeModal() {
-      this.showModal = false
+      this.showModal = false // 隱藏跳窗窗口
     }
   }
 })

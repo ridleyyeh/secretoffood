@@ -1,51 +1,39 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue';
 import RecipeCard from '@/components/RecipeCard.vue';
-import recipesData from '@/recipes.json';
-import { reactive, ref } from 'vue';
+import { useRecipeStore } from '@/stores/recipeStore';
+import recipesData from '@/recipes.json'; //靜態
 
-const recipes = reactive(recipesData);
-const selectedRecipe = ref(null);
-const showModal = ref(false);
+const store = useRecipeStore();
+
+
+store.setRecipes(recipesData);
 
 function openModal(recipe) {
-    selectedRecipe.value = recipe;
-    showModal.value = true;
+    store.selectRecipe(recipe);
 }
 
-
 function closeModal() {
-    showModal.value = false;
+    store.closeRecipeModal();
 }
 </script>
 
-
 <template>
-
     <NavBar />
-
-
     <div class="recipes-container">
-        <RecipeCard v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" @openModal="openModal" />
+        <RecipeCard v-for="recipe in store.recipes" :key="recipe.id" :recipe="recipe" @openModal="openModal" />
     </div>
-
-    <div class="modal" v-if="showModal">
+    <div class="modal" v-if="store.showModal">
         <div class="modal-content">
-            <h2>{{ selectedRecipe.title }}</h2>
-            <p>{{ selectedRecipe.description }}</p>
+            <h2>{{ store.selectedRecipe.title }}</h2>
+            <p>{{ store.selectedRecipe.description }}</p>
             <ul>
-                <li v-for="ingredient in selectedRecipe.ingredients" :key="ingredient">{{ ingredient }}</li>
+                <li v-for="ingredient in store.selectedRecipe.ingredients" :key="ingredient">{{ ingredient }}</li>
             </ul>
             <button @click="closeModal" class="btn btn-outline-dark">關閉</button>
         </div>
     </div>
-
-
-
-
-
 </template>
-
 <style scoped lang="scss">
 * {
     margin: 0;
