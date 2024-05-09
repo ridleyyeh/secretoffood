@@ -50,8 +50,11 @@ nav {
 
     div {
 
+
         .navbar-nav {
+
             gap: 20px;
+
 
 
 

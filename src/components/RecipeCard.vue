@@ -16,7 +16,7 @@ function openModal() {
 <template>
     <div class="card-body">
         <div class="card" @click="openModal" style="width: 18rem;">
-            <img :src="recipe.image" alt="Recipe image" class="card-img-top">
+            <!-- <img :src="recipe.image" alt="Recipe image" class="card-img-top"> -->
             <div class="card-body">
                 <h5 class="card-title">{{ recipe.title }}</h5>
                 <p class="card-text">{{ recipe.description }}</p>
@@ -37,6 +37,8 @@ function openModal() {
         &:hover {
             transform: scale(1.05);
         }
+
+
     }
 }
 </style>

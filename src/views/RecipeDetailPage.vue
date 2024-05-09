@@ -71,6 +71,7 @@ function closeModal() {
         border-radius: 8px;
         width: 500px;
         text-align: center;
+        display: flex;
 
         ul {
             list-style: none;
@@ -80,6 +81,10 @@ function closeModal() {
         button {
             // width: 300px;
 
+        }
+
+        p {
+            text-align: center;
         }
     }
 

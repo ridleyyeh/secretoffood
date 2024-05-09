@@ -16,6 +16,10 @@ export const useRecipeStore = defineStore('recipeStore', {
     },
     closeRecipeModal() {
       this.showModal = false // 隱藏跳窗窗口
+    },
+    addRecipe(newRecipe) {
+      newRecipe.ingredients = newRecipe.ingredients.split(',').map((item) => item.trim())
+      this.recipes.push(newRecipe)
     }
   }
 })
